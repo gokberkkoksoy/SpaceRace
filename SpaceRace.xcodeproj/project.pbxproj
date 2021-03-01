@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		5E0BD6FB25ED79A700156B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BD6FA25ED79A700156B64 /* AppDelegate.swift */; };
 		5E0BD6FD25ED79A700156B64 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5E0BD6FC25ED79A700156B64 /* GameScene.sks */; };
-		5E0BD6FF25ED79A700156B64 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5E0BD6FE25ED79A700156B64 /* Actions.sks */; };
 		5E0BD70125ED79A700156B64 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BD70025ED79A700156B64 /* GameScene.swift */; };
 		5E0BD70325ED79A700156B64 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BD70225ED79A700156B64 /* GameViewController.swift */; };
 		5E0BD70625ED79A700156B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E0BD70425ED79A700156B64 /* Main.storyboard */; };
 		5E0BD70825ED79AB00156B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E0BD70725ED79AB00156B64 /* Assets.xcassets */; };
+		5E0BD71225ED79E800156B64 /* starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5E0BD71025ED79E800156B64 /* starfield.sks */; };
+		5E0BD71325ED79E800156B64 /* explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5E0BD71125ED79E800156B64 /* explosion.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E0BD6F725ED79A700156B64 /* SpaceRace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceRace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0BD6FA25ED79A700156B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E0BD6FC25ED79A700156B64 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		5E0BD6FE25ED79A700156B64 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		5E0BD70025ED79A700156B64 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		5E0BD70225ED79A700156B64 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		5E0BD70525ED79A700156B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E0BD70725ED79AB00156B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E0BD70925ED79AB00156B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E0BD71025ED79E800156B64 /* starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = starfield.sks; sourceTree = "<group>"; };
+		5E0BD71125ED79E800156B64 /* explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explosion.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,13 @@
 			children = (
 				5E0BD6FA25ED79A700156B64 /* AppDelegate.swift */,
 				5E0BD6FC25ED79A700156B64 /* GameScene.sks */,
-				5E0BD6FE25ED79A700156B64 /* Actions.sks */,
 				5E0BD70025ED79A700156B64 /* GameScene.swift */,
 				5E0BD70225ED79A700156B64 /* GameViewController.swift */,
 				5E0BD70425ED79A700156B64 /* Main.storyboard */,
 				5E0BD70725ED79AB00156B64 /* Assets.xcassets */,
 				5E0BD70925ED79AB00156B64 /* Info.plist */,
+				5E0BD71125ED79E800156B64 /* explosion.sks */,
+				5E0BD71025ED79E800156B64 /* starfield.sks */,
 			);
 			path = SpaceRace;
 			sourceTree = "<group>";
@@ -130,7 +133,8 @@
 				5E0BD70625ED79A700156B64 /* Main.storyboard in Resources */,
 				5E0BD6FD25ED79A700156B64 /* GameScene.sks in Resources */,
 				5E0BD70825ED79AB00156B64 /* Assets.xcassets in Resources */,
-				5E0BD6FF25ED79A700156B64 /* Actions.sks in Resources */,
+				5E0BD71325ED79E800156B64 /* explosion.sks in Resources */,
+				5E0BD71225ED79E800156B64 /* starfield.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gokberkkoksoy.SpaceRace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -311,7 +315,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gokberkkoksoy.SpaceRace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
